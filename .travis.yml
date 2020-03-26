@@ -7,4 +7,4 @@ before_install:
   - docker pull ypcs/debbuild:debian-sid
 
 script:
-  - docker run --volume $(pwd)/artifacts:/artifacts:rw --volume $(pwd)/:/usr/src/gnome-network-displays:rw ypcs/debbuild:debian-sid
+  - docker run --env SOURCE_DIR=/usr/src/gnome-network-displays --volume $(pwd)/artifacts:/artifacts:rw --volume $(pwd)/:/usr/src/gnome-network-displays:rw ypcs/debbuild:debian-sid
