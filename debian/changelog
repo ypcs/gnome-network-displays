@@ -1,0 +1,5 @@
+gnome-network-displays (0.90.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Ville Korhonen <ville@xd.fi>  Mon, 23 Mar 2020 16:46:17 +0200

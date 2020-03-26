@@ -1,0 +1,24 @@
+Source: gnome-network-displays
+Section: misc
+Priority: optional
+Maintainer: Ville Korhonen <ville@xd.fi>
+Build-Depends: debhelper-compat (= 12),
+ cmake,
+ gettext,
+ libgstreamer1.0-dev,
+ libgstrtspserver-1.0-dev,
+ libgtk-3-dev,
+ libx264-dev,
+ libnm-dev,
+ libpulse-dev,
+ meson
+Standards-Version: 4.5.0
+Homepage: https://github.com/benzea/gnome-network-displays/
+#Vcs-Browser: https://salsa.debian.org/debian/gnome-network-displays
+#Vcs-Git: https://salsa.debian.org/debian/gnome-network-displays.git
+
+Package: gnome-network-displays
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Miracast implementation for GNOME
+ WIP
