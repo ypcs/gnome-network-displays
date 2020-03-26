@@ -2,8 +2,8 @@
 services:
   - docker
 
-    #install:
-#  - docker pull ypcs/debbuild:sid
+before_install:
+  - docker pull ypcs/debbuild:debian-sid
 
 script:
-  - docker run --volume $(pwd)/artifacts:/artifacts:rw --volume $(pwd)/:/usr/src/gnome-network-displays:rw ypcs/debbuild:sid
+  - docker run --volume $(pwd)/artifacts:/artifacts:rw --volume $(pwd)/:/usr/src/gnome-network-displays:rw ypcs/debbuild:debian-sid
